@@ -21,7 +21,6 @@ body {
 h1 {
     font-family: 'Greycliff CF';
     font-style: normal;
-    font-weight: 600;
     font-size: 40px;
     line-height: 48px;
 }
@@ -31,12 +30,35 @@ h1 {
     font-size: 16px
 }
 
+.countdown-time {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.uk-text-icon {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-right: 80px;
+}
+
 /* END TEXT STYLE */
 
 
+/* IMAGE STYLE */
+
+
+
+/* END IMAGE STYLE */
 
 .banner-title {
     margin: 26px 0;
+    font-size: 48px;
+}
+
+.banner-title-half {
+    margin: 23px 0;
 }
 
 .navbar {
@@ -325,4 +347,55 @@ header {
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: #FD9901;
     --bs-btn-disabled-border-color: #FD9901;
+}
+
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #6A8187;
+    --bs-btn-border-color: #6A8187;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #516266;
+    --bs-btn-hover-border-color: #516266;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6A8187;
+    --bs-btn-active-border-color: #6A8187;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6A8187;
+    --bs-btn-disabled-border-color: #6A8187;
+}
+
+#countdown {
+    background-color: #12A89D;
+    padding: 15px;
+    color: #fff;
+    border-radius: 15px 15px 100px 15px;
+    background-image: -webkit-linear-gradient(165deg, #275c6831 50%, #12A89D 50%);
+    position: absolute;
+    z-index: 2;
+    right: 5%;
+    top: 20%;
+    text-align: center;
+}
+
+#countdown hr {
+    height: 2px;
+    background: #fff;
+    margin: 0;
+    opacity: 1;
+  }
+
+.uk-grid > * {
+    padding-left: 0px;
+}
+
+.uk-text-left {
+    left: calc(20% - var(--uk-position-margin-offset));
+    top: calc(40% - var(--uk-position-margin-offset));
+}
+
+.uk-panel .btn {
+    font-size: 24px;
+    padding: 15px 30px
 }
