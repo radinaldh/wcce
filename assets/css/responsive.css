@@ -1,7 +1,7 @@
 @media (max-width: 1440px) {
     .uk-text-left {
         left: calc(25% - var(--uk-position-margin-offset));
-        top: calc(45% - var(--uk-position-margin-offset));
+        top: calc(55% - var(--uk-position-margin-offset));
     }
 }
 

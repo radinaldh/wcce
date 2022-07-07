@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family:'Greycliff CF';
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
     color: #000;
@@ -392,10 +392,29 @@ header {
 
 .uk-text-left {
     left: calc(20% - var(--uk-position-margin-offset));
-    top: calc(40% - var(--uk-position-margin-offset));
+    top: calc(45% - var(--uk-position-margin-offset));
 }
 
 .uk-panel .btn {
     font-size: 24px;
     padding: 15px 30px
 }
+
+.relative {
+    position: relative !important;
+}
+
+.absolute {
+    position: absolute !important;
+}
+
+.element-bg-1 {
+    right: 0;
+    bottom: -25%;
+    width: 25%;
+    opacity: 0.75;
+  }
+
+  .z-2 {
+    z-index: 2 !important;
+  }
