@@ -16,8 +16,6 @@ body {
     background-color: #f7f7f7;
 }
 
-/* TEXT STYLE */
-
 h1 {
     font-family: 'Greycliff CF';
     font-style: normal;
@@ -26,14 +24,12 @@ h1 {
     line-height: 48px;
 }
 
-.header-icon-text{
+.header-icon-text
+/*Text buat header atas*/
+{
     font-weight: 500;
-    font-size: 16px
 }
-
-/* END TEXT STYLE */
-
-
+/*end text*/
 
 .banner-title {
     margin: 26px 0;
