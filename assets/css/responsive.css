@@ -5,8 +5,11 @@
     }
 }
 
-@media (max-width: 1300px) {
-
+@media (max-width: 1280px) {
+    .uk-text-left {
+        left: calc(30% - var(--uk-position-margin-offset));
+        top: calc(57% - var(--uk-position-margin-offset));
+    }
 }
 
 @media (max-width: 600px) {
