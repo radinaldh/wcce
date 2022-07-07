@@ -22,6 +22,13 @@
 </head>
 
 <body>
+
+    <div id="preloader">
+        <div class="wrapper">
+            
+        <div class="loader"></div>
+        </div>
+    </div>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -169,16 +176,26 @@
 
             </div>
         </section>
-        <section class="py-3 relative" style="min-height: 75vh;">
+        <section class="py-3 relative" style="min-height: 60vh; height: auto;">
             <img class="element-bg-1 absolute" src="assets/images/element-bg-1.png" />
             <div class="py-3 container-fluid">
                 <div class="row">
-                    <div class="col-md-4">
-
+                    <div class="col-md-4 hw-100">
+                        <div class="relative">
+                            <div class="rounded border-purple absolute image-1"
+                                style="background: url(assets/images/image-1.png); width: 20vw; height: 20vw; margin: auto; display: table;">
+                            </div>
+                            <div class="rounded border-purple absolute image-2"
+                                style="background: url(assets/images/image-2.png); width: 15vw; height: 15vw;">
+                            </div>
+                            <img class="element-bg-2 absolute" src="assets/images/element-bg-2.png">
+                        </div>
                     </div>
                     <div class="col-md-8">
-                        <h1>
-                            World Conference on Creative Economy
+                        <h1 style="margin-bottom: 1vw">
+                            <strong>
+                                World Conference on Creative Economy
+                            </strong>
                         </h1>
                         <p>
                             Indonesia's leadership in the CE at the global level
@@ -202,13 +219,15 @@
 
                         </p>
 
+                        <button class="btn btn-reguler relative view-details">View Details</button>
+
                     </div>
                 </div>
 
             </div>
         </section>
         <section class="py-3 relative z-2"
-            style="background-image: url(assets/images/section-bg.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-color: #000; height: 100vh;">
+            style="background-image: url(assets/images/section-bg.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-color: #000; min-height: 60vh;">
 
         </section>
     </main>
