@@ -1,0 +1,288 @@
+@font-face {
+    font-family: GreycliffCF;
+    src: url("fonts/GreycliffCF-Regular.eot");
+    src: url("fonts/GreycliffCF-Regular.woff") format("woff"),
+        url("fonts/GreycliffCF-Regular.woff2") format("woff2"),
+        url("fonts/GreycliffCF-Regular.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    font-family: GreycliffCF;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #f7f7f7;
+}
+
+.navbar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+/*
+headeer top
+*/
+.topbar {
+    padding: 0;
+}
+
+.topbar .container .row {
+    margin: -7px;
+    padding: 0;
+}
+
+.topbar .container .row .col-md-12 {
+    padding: 0;
+}
+
+.topbar p {
+    margin: 0;
+    display: inline-block;
+    font-size: 13px;
+    color: #f1f6ff;
+}
+
+.topbar p>i {
+    margin-right: 5px;
+}
+
+.topbar p:last-child {
+    text-align: right;
+}
+
+header .navbar {
+    margin-bottom: 0;
+    padding: 15px 0;
+}
+
+.topbar li.topbar {
+    display: inline;
+    padding-right: 18px;
+    line-height: 52px;
+    transition: all .3s linear;
+}
+
+.topbar li.topbar:hover {
+    color: #1bbde8;
+}
+
+.topbar ul.info i {
+    color: #131313;
+    font-style: normal;
+    margin-right: 8px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.topbar ul.info li {
+    float: right;
+    padding-left: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 44px;
+}
+
+.topbar ul.info i span {
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 50px;
+    padding-left: 18px;
+}
+
+ul.social-network {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.social-network li {
+    border: none;
+    margin: 0;
+}
+
+ul.social-network li i {
+    margin: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+    padding: 5px 0 0;
+    width: 32px;
+    display: inline-block;
+    text-align: center;
+    height: 32px;
+    vertical-align: baseline;
+}
+
+ul.social-network {
+    list-style: none;
+    margin: 5px 0 10px -25px;
+    float: right;
+}
+
+ul.social-network li a {
+    color: #fff
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.bg-image-full {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.bg-dark {
+    background-color: #222 !important;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: #F7F7F7
+}
+
+.navbar-nav li {
+    margin: 0 15px;
+}
+
+.navbar-nav li a {
+    font-size: 18px;
+}
+
+.navbar-brand {
+    position: absolute;
+    top: -45%;
+    left: 0;
+    padding: 25px 15px 0 15px;
+    background-color: #F7F7F7;
+    border-radius: 0 15px;
+}
+
+.navbar-nav .nav-item a {
+    font-weight: bold;
+    color: #000;
+}
+
+.fixed .navbar-nav .nav-item a {
+    color: #fff;
+}
+
+.fixed .topbar ul li a, .fixed .topbar ul li i {
+    color: #000;
+}
+
+.navbar-nav .nav-item.active a {
+    font-weight: bold;
+    color: #FD9901;
+}
+
+header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+}
+
+.fixed .topbar {
+    background: rgba(245, 245, 245, 0.8)
+}
+
+.fixed .navbar {
+    background: rgba(17, 16, 56);
+}
+
+.fixed .navbar-brand{
+    background: rgba(17, 16, 56);
+}
+
+.orange {
+    color: #FD9901;
+}
+
+.white, .white i, .white a {
+    color: #fff;
+}
+
+.header.fixed .logo-dark, .logo-white {
+    display: none
+}
+
+.header.fixed .logo-white {
+    display: block;
+}
+
+.nav-right {
+    position: absolute;
+    right: 15px;
+}
+
+.nav-right > * {
+    margin: 0 5px;
+}
+
+.input-group-text {
+    background: unset !important;
+}
+
+.form-control.search {
+    border-radius: 0;
+    background: unset;
+    border: unset;
+    border-bottom: 2px solid #000;
+    transition: 0.5s;
+    transform:scaleX(0);
+    padding: 0;
+}
+
+.fixed .form-control.search {
+    border-bottom: 2px solid #fff;
+}
+
+.search-group .fa-search {
+    font-size: 24px;
+}
+
+.fixed .search-group .fa-search {
+    color: #fff;
+  }
+
+.search-group .fa-search:hover {
+    cursor: pointer;
+}
+
+.mobile {
+    display: none;
+}
