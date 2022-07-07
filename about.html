@@ -1,12 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WCCE</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="assets/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+
 <body>
-    <h1>HELLO</h1>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header id="header" class="header sticky">
+        <div class="topbar desktop">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="social-network">
+                            <li><a href="#"><i class="orange fa fa-map-marker"></i> A</a></li>
+                            <li><a href="#"><i class="orange fa fa-envelope-o"></i> B</a></li>
+                        </ul>
+                    </div>
+                    <!-- social icon-->
+                    <div class="col-sm-6">
+                        <ul class="social-network white">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <nav class="desktop navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" rel="nofollow" href="/" style="text-transform: uppercase;"><img
+                        class="logo-dark" src="assets/images/logo.png"> <img class="logo-white"
+                        src="assets/images/logo-white.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">HOME
+                            </a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/about.html">ABOUT</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">THEMES</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">REPORTS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT US</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="nav-right d-flex">
+                    <div class="search-wrap">
+                        <div class="input-group search-group">
+                            <input id="searchForm" type="search" class="form-control search" placeholder="Search"
+                                aria-label="Search" aria-describedby="search-addon" />
+                            <span class="input-group-text border-0" id="search-addon" onclick="searchIcon()">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">REGISTER WCCE</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="pos-f-t mobile">
+            <div class="collapse" id="navbarMobile">
+                <div class="bg-dark p-4">
+                    <h4 class="text-white">Collapsed content</h4>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <a rel="nofollow" href="/" style="text-transform: uppercase;"><img class="logo"
+                        src="assets/images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile"
+                    aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+
+        </div>
+
+    </header>
+    <main>
+        <section id="landingBanner">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+                <ul class="uk-slider-items uk-grid">
+                    <li class="uk-width-1">
+                        <div class="uk-panel">
+                            <img src="assets/images/banner_1.png" width="100%" alt="">
+                            <div class="uk-position-center uk-text-center">
+                                <img src="assets/images/g20-white.png" uk-slider-parallax="x: 100,-100" />
+                                <h1 class="banner-title"  uk-slider-parallax="x: 200,-200">About Us</h1>
+                                <p class="banner-title">TESTING</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+
+    </footer>
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/uikit-icons.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js" async defer></script>
+    <script src="assets/js/bootstrap.min.js" async defer></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
