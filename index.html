@@ -19,16 +19,13 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/bootstrap.bundle.min.js" async defer></script>
+    <script src="assets/js/bootstrap.min.js" async defer></script>
 </head>
 
 <body>
 
-    <div id="preloader">
-        <div class="wrapper">
-            
-        <div class="loader"></div>
-        </div>
-    </div>
+
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -132,6 +129,7 @@
                 style="max-height: 100vh">
 
                 <p id="countdown"></p>
+                <script src="assets/js/countdown.js"></script>
                 <ul class="uk-slider-items uk-grid">
                     <li class="uk-width-1">
 
@@ -162,7 +160,9 @@
                                 </p>
                                 <button type="button" class="btn btn-primary"
                                     style="margin-right: 30px"><strong>REGISTER WCCE</strong></button>
-                                <button type="button" class="btn btn-secondary"><strong>VIDEO DEMO</strong></button>
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#bannerModal"><strong>VIDEO DEMO</strong></button>
+                                <!-- Modal -->
 
                             </div>
                         </div>
@@ -176,6 +176,21 @@
 
             </div>
         </section>
+        <div class="modal fade" id="bannerModal" role="dialog">
+            <div class="modal-dialog absolute">
+                <!-- Modal content-->
+                <div class="modal-content transparent">
+                    <button type="button" class="close btn absolute" data-bs-dismiss="modal"><i
+                            class="fa fa-times"></i></button>
+                    <div class="modal-body">
+                        <iframe width="100%" height="720" src="https://www.youtube.com/embed/qnXcB5L97MI"
+                            title="INDONESIA - Our Home｜Cinematic Video" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="py-3 relative" style="min-height: 60vh; height: auto;">
             <img class="element-bg-1 absolute" src="assets/images/element-bg-1.png" />
             <div class="py-3 container-fluid">
@@ -189,6 +204,25 @@
                                 style="background: url(assets/images/image-2.png); width: 15vw; height: 15vw;">
                             </div>
                             <img class="element-bg-2 absolute" src="assets/images/element-bg-2.png">
+                            <button type="button" class="btn btn-white btn-lg btn-play rounded absolute"
+                                data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa fa-play"></i></button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog absolute">
+                                    <!-- Modal content-->
+                                    <div class="modal-content transparent">
+                                        <button type="button" class="close btn absolute" data-bs-dismiss="modal"><i
+                                                class="fa fa-times"></i></button>
+                                        <div class="modal-body">
+                                            <iframe width="100%" height="720"
+                                                src="https://www.youtube.com/embed/qnXcB5L97MI"
+                                                title="INDONESIA - Our Home｜Cinematic Video" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -228,18 +262,159 @@
         </section>
         <section class="py-3 relative z-2"
             style="background-image: url(assets/images/section-bg.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-color: #000; min-height: 60vh;">
+            <div class="container-fluid">
+                <div class="section-title text-white text-center">
+                    <h1><strong>Inclusively Creative: <span class="text-orange">A Global Recovery</span></strong></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed velit vitae ante dictum
+                        malesuada.</p>
+                </div>
+                <div class="row image-box py-3">
+                    <div class="col col-lg-3 col-sm-3">
+                        <div class="image-box-wrap text-white text-center">
+                            <i class="fa fa-solid fa-globe"></i>
+                            <h3 class="text-orange">Creative Economy for Global Revival</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed velit vitae ante
+                                dictum malesuada.</p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-sm-3">
+                        <div class="image-box-wrap text-white text-center">
+                            <i class="fa fa-solid fa-sticky-note"></i>
+                            <h3 class="text-orange">Inclusivity and SDGs Agenda</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed velit vitae ante
+                                dictum malesuada.</p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-sm-3">
+                        <div class="image-box-wrap text-white text-center">
+                            <i class="fa fa-solid fa-copyright"></i>
+                            <h3 class="text-orange">IP and Rights of the Creative</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed velit vitae ante
+                                dictum malesuada.</p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-sm-3">
+                        <div class="image-box-wrap text-white text-center">
+                            <i class="fa fa-solid fa-line-chart"></i>
+                            <h3 class="text-orange">The Future of Creative Economy</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed velit vitae ante
+                                dictum malesuada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-3 relative" style="min-height: 60vh; height: auto;">
+            <img class="element-bg-middle absolute" src="assets/images/element-bg-logo.png" />
+            <div class="py-3 container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 style="margin-bottom: 1vw">
+                            <strong>
+                                G20 CONFERENCE - Reports
+                            </strong>
+                        </h1>
+                        <p>
+                            Indonesia's leadership in the CE at the global level
+                            is evident from its initiative to hold the 1
+                            st World
+                            Conference on Creative Economy in Bali 2018,
+                            resulting in the Bali Agenda for CE; and the
+                            establishment of Friends of Creative Economy
+                            2019, that proposed the UNGA Resolution on
+                            International Year of Creative Economy for
+                            Sustainable Development 2021 and established
+                            the Global Centre of Excellence &
+                            International Cooperation for CE (G-CINC).
+                        </p>
+                        <p>
+                            The end of 2021 saw the declaration of Dubai
+                            WCCE 2021 Agenda that comprises 21 points,
+                            covering the subjects of, among other, economic
+                            benefits, youth, ecosystem, and international
+                            efforts; including the continuation of the discussions in WCCE 2022 in Bali, Indonesia.
 
+                        </p>
+
+                        <button class="btn btn-reguler relative view-details">View Details</button>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="assets/images/image-3.png" alt="image-3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-3 relative gradient">
+            <div class="container-fluid">
+                <div class="section-title text-white text-center">
+                    <h3>
+                        <strong>
+                            Our Features
+                        </strong>
+                    </h3>
+                </div>
+                <div class="row text-center py-3">
+                    <div class="col-md-4">
+                        <div class="d-flex text-center text-white justify-content-center">
+                            <div class="counter-wrap"><span class="count">50</span></div>
+                            <h1 class="counter-text">Meetings</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex text-center text-white justify-content-center">
+                            <div class="counter-wrap"><span class="count">10</span></div>
+                            <h1 class="counter-text">Conference</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex text-center text-white justify-content-center">
+                            <div class="counter-wrap"><span class="count">100</span></div>
+                            <h1 class="counter-text">Countries</h1>
+                        </div>
+                    </div>
+                    <script src="assets/js/counter.js"></script>
+                </div>
+            </div>
         </section>
     </main>
-
     <footer>
-
+        <div class="py-5 container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="footer-menu">
+                        <li><h5><strong>About Us</strong></h5></li>
+                        <li>WCCE Indonesia 2021</li>
+                        <li>Themes</li>
+                        <li>Partners</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="footer-menu">
+                        <li><h5><strong>Social Media</strong></h5></li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-newsletter">
+                        <h5><strong>Get The Latest News!</strong></h5>
+                        <form id="form1">
+                            <div class="d-flex">
+                            <input class="newsletter-text" type="text">
+                            <button class="newsletter-submit" type="submit" form="form1" value="Submit">Subscribe</button>
+                            </div>
+                            <input type="checkbox" name="" id="">
+                            <span class="checkbox">By checking the box, you are agree that you’re agree to receive WCCE newsletter from our site</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="assets/js/uikit.min.js"></script>
     <script src="assets/js/uikit-icons.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js" async defer></script>
-    <script src="assets/js/bootstrap.min.js" async defer></script>
     <script src="assets/js/script.js"></script>
 </body>
 
