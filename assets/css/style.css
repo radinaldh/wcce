@@ -860,21 +860,48 @@ header {
     padding-right: 0;
 }
 
-/* preloader */
-
-#preloader {
+#backTop {
+    display: none;
     position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-image: -webkit-linear-gradient(165deg, #275c6831 50%, #12A89D 50%);
-    background-color: #12A89D;
-    z-index: 99999999;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #111038;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
     transition: 0.5s;
 }
 
-.wrapper {
+#backTop:hover,
+#backTop:active {
+    background: linear-gradient(91.1deg, rgba(148, 195, 206, 1) -11.58%, rgba(233, 226, 161, 1) 52.06%, rgba(242, 158, 142, 1) 111.84%);
+    border: 0.5px solid #111038;
+    color: #111038;
+}
+
+/* preloader */
+
+#loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-color: #111038;
+    z-index: 99;
+}
+
+#loading-image {
+    z-index: 100;
 }
 
 /* animation */

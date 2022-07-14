@@ -80,7 +80,7 @@
         position: relative;
         left: 0;
         right: 0;
-        top: 20%;
+        top: 10%;
     }
 
     h1 {
@@ -158,5 +158,17 @@
       h2 {
         font-size: 17px;
         font-weight: 700;
+      }
+
+      .mobile-justify-center {
+        justify-content: center;
+      }
+
+      .mobile-justify-center .btn {
+        font-size: 20px;
+      }
+      
+      .uk-grid {
+        margin-left: 0;
       }
 }
