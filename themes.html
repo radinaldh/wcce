@@ -16,11 +16,11 @@
     <script src="assets/js/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="assets/css/uikit.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <script src="assets/js/bootstrap.bundle.min.js" async defer></script>
-    <script src="assets/js/bootstrap.min.js" async defer></script>
+    <link rel="stylesheet" href="assets/css/responsive.css"> 
     <script src="assets/js/owl.carousel.min.js"></script>
 </head>
 
@@ -31,28 +31,20 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header id="header" class="header sticky">
-        <div class="topbar desktop">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <ul class="social-network">
-                            <li><a class="header-icon-text" href="#"><i class="orange fa fa-map-marker"></i> A</a></li>
-                            <li><a class="header-icon-text" href="#"><i class="orange fa fa-envelope-o"></i> B</a></li>
-                        </ul>
-                    </div>
-                    <!-- social icon-->
-                    <div class="col-sm-6">
-                        <ul class="social-network white">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
+        <div class="topbar desktop d-flex">
+            <ul class="d-flex information">
+                <li><a class="header-icon-text" href="#"><i class="orange fa fa-map-marker"></i> <span
+                            class="white">Bali International Convention Center</span> </a></li>
+                <li><a class="header-icon-text" href="#"><i class="orange fa fa-envelope-o"></i> <span
+                            class="white">youremail@mail.com</span></a></li>
+            </ul>
+            <ul class="social-network white">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
         </div>
 
         <nav class="desktop navbar navbar-expand-lg navbar-light">
@@ -67,7 +59,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
 
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">HOME
                             </a>
                         </li>
@@ -76,16 +68,16 @@
                             <a class="nav-link" href="about.html">ABOUT</a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="themes.html">THEMES</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">REPORTS</a>
+                            <a class="nav-link" href="reports.html">REPORTS</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT US</a>
+                            <a class="nav-link" href="contact.html">CONTACT US</a>
                         </li>
 
                     </ul>
@@ -105,34 +97,57 @@
             </div>
         </nav>
 
-        <div class="pos-f-t mobile">
-            <div class="collapse" id="navbarMobile">
+        <div class="pos-f-t mobile sticky">
+            <div class="collapse" id="navbarToggleExternalContent">
                 <div class="bg-dark p-4">
-                    <h4 class="text-white">Collapsed content</h4>
-                    <span class="text-muted">Toggleable via the navbar brand.</span>
-                </div>
-            </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <a rel="nofollow" href="/" style="text-transform: uppercase;"><img class="logo"
-                        src="assets/images/logo.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile"
-                    aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
+                    <ul class="navbar-nav ml-auto">
 
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">HOME
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">ABOUT</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="themes.html">THEMES</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="reports.html">REPORTS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">CONTACT US</a>
+                        </li>
+
+                    </ul>
+                </div>
+              </div>
+              <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid d-flex">
+                    <a class="logo-link" rel="nofollow" href="index.html" style="text-transform: uppercase;">
+                        <img class="logo"src="assets/images/logo-white.png">
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </nav>
         </div>
 
     </header>
     <main>
-        <section id="landingBanner">
+        <section id="landingBanner" class="relative z-1">
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
                 <ul class="uk-slider-items uk-grid">
                     <li class="uk-width-1">
                         <div class="uk-panel">
-                            <img src="assets/images/banner_2.png" width="100%" alt="">
+                            <img class="bg-mobile-uk" src="assets/images/banner_2.png" width="100%" alt="">
                             <div class="uk-position-center uk-text-center">
-                                <img src="assets/images/g20-white.png" uk-slider-parallax="x: 100,-100" />
+                                <img class="logo-mobile-uk" src="assets/images/g20-white.png" uk-slider-parallax="x: 100,-100" />
                                 <h1 class="banner-title" uk-slider-parallax="x: 200,-200">Themes</h1>
                             </div>
                         </div>
@@ -140,10 +155,391 @@
                 </ul>
             </div>
         </section>
+        <section class="py-5 relative">
+            <svg class="element-bg element-bg-3 absolute z-0" width="637" height="855" viewBox="0 0 637 855" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M382.606 655.021L89.1443 655.021L-57.5865 400.876L89.1442 146.731L382.606 146.731L529.337 400.876L382.606 655.021Z"
+                    fill="#F2F2F2" />
+                <path
+                    d="M14.6068 708.021L-278.855 708.021L-425.586 453.876L-278.855 199.731L14.6068 199.731L161.338 453.876L14.6068 708.021Z"
+                    fill="#F2F2F2" />
+            </svg>
+            <svg class="element-bg element-bg-4 absolute z-0" width="237" height="100" viewBox="0 0 237 100" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20.3573" cy="91.7621" r="7.64684" fill="#F2F2F2" />
+                <circle cx="62.0099" cy="91.7621" r="7.64684" fill="#F2F2F2" />
+                <circle cx="103.663" cy="91.7621" r="7.64684" fill="#F2F2F2" />
+                <circle cx="145.316" cy="91.7621" r="7.64684" fill="#F2F2F2" />
+                <circle cx="186.968" cy="91.7621" r="7.64684" fill="#F2F2F2" />
+                <circle cx="228.621" cy="91.7621" r="7.64684" fill="#F2F2F2" />
+                <circle cx="20.3573" cy="49.7045" r="7.64684" fill="#F2F2F2" />
+                <circle cx="62.0099" cy="49.7045" r="7.64684" fill="#F2F2F2" />
+                <circle cx="103.663" cy="49.7045" r="7.64684" fill="#F2F2F2" />
+                <circle cx="145.316" cy="49.7045" r="7.64684" fill="#F2F2F2" />
+                <circle cx="186.968" cy="49.7045" r="7.64684" fill="#F2F2F2" />
+                <circle cx="228.621" cy="49.7045" r="7.64684" fill="#F2F2F2" />
+                <circle cx="20.3573" cy="7.64684" r="7.64684" fill="#F2F2F2" />
+                <circle cx="62.0099" cy="7.64684" r="7.64684" fill="#F2F2F2" />
+                <circle cx="103.663" cy="7.64684" r="7.64684" fill="#F2F2F2" />
+                <circle cx="145.316" cy="7.64684" r="7.64684" fill="#F2F2F2" />
+                <circle cx="186.968" cy="7.64684" r="7.64684" fill="#F2F2F2" />
+                <circle cx="228.621" cy="7.64684" r="7.64684" fill="#F2F2F2" />
+            </svg>
+            <svg class="element-bg element-bg-5 absolute z-0" width="236" height="310" viewBox="0 0 236 310" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M148.165 254.189L60.671 254.189L16.9241 178.417L60.671 102.645L148.165 102.645L191.912 178.417L148.165 254.189Z"
+                    stroke="#FD9901" stroke-width="15" />
+                <path
+                    d="M8.23317 218L-1.53364 218L-1.53364 216.5L-5.55101 216.5L-7.5597 213.021L-8.85874 213.771L-13.7421 205.313L-12.4431 204.563L-17.3265 196.104L-18.6255 196.854L-23.509 188.396L-22.2099 187.646L-27.0933 179.188L-28.3924 179.938L-33.2758 171.479L-31.9767 170.729L-36.8601 162.271L-38.1592 163.021L-43.0426 154.563L-41.7435 153.813L-46.6269 145.355L-47.926 146.105L-52.8094 137.646L-51.5103 136.896L-53.519 133.417L-51.5103 129.938L-52.8094 129.188L-47.926 120.73L-46.6269 121.48L-41.7435 113.021L-43.0426 112.271L-38.1592 103.813L-36.8601 104.563L-31.9767 96.1047L-33.2758 95.3547L-28.3924 86.8964L-27.0933 87.6464L-22.2099 79.1881L-23.509 78.4381L-18.6256 69.9798L-17.3265 70.7298L-12.4431 62.2715L-13.7421 61.5215L-8.85875 53.0632L-7.55971 53.8132L-5.55102 50.334L-1.53363 50.334L-1.53363 48.834L8.23316 48.834L8.23317 50.334L18 50.334L18 48.834L27.7668 48.834L27.7668 50.334L37.5336 50.334L37.5336 48.834L47.3004 48.834L47.3004 50.334L57.0672 50.334L57.0672 48.834L66.834 48.834L66.834 50.334L76.6008 50.334L76.6008 48.834L86.3676 48.834L86.3676 50.334L90.385 50.334L92.3937 53.8132L93.6927 53.0632L98.5762 61.5215L97.2771 62.2715L102.161 70.7298L103.46 69.9798L108.343 78.4381L107.044 79.1881L111.927 87.6464L113.226 86.8964L118.11 95.3547L116.811 96.1047L121.694 104.563L122.993 103.813L127.877 112.271L126.578 113.021L131.461 121.48L132.76 120.73L137.643 129.188L136.344 129.938L138.353 133.417L136.344 136.896L137.643 137.646L132.76 146.105L131.461 145.355L126.578 153.813L127.877 154.563L122.993 163.021L121.694 162.271L116.811 170.729L118.11 171.479L113.226 179.938L111.927 179.188L107.044 187.646L108.343 188.396L103.46 196.854L102.161 196.104L97.2771 204.563L98.5762 205.313L93.6928 213.771L92.3937 213.021L90.385 216.5L86.3676 216.5L86.3676 218L76.6008 218L76.6008 216.5L66.834 216.5L66.834 218L57.0672 218L57.0672 216.5L47.3004 216.5L47.3004 218L37.5336 218L37.5336 216.5L27.7668 216.5L27.7668 218L18 218L18 216.5L8.23317 216.5L8.23317 218Z"
+                    stroke="black" stroke-width="3" stroke-dasharray="10 10" />
+            </svg>
+
+            <svg class="element-bg element-bg-6 absolute z-0" width="426" height="510" viewBox="0 0 426 510" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M440.605 509.021L147.143 509.021L0.412517 254.876L147.143 0.730773L440.605 0.730755L587.336 254.876L440.605 509.021Z"
+                    fill="#F2F2F2" />
+            </svg>
+
+            <svg class="element-bg element-bg-7 absolute z-0" width="196" height="643" viewBox="0 0 196 643" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M239.095 317.121L151.601 317.121L107.854 241.349L151.601 165.577L239.095 165.577L282.842 241.349L239.095 317.121Z"
+                    stroke="#FD9901" stroke-width="15" />
+                <circle cx="133.499" cy="16.5" r="15" stroke="#12A89D" stroke-width="3" />
+                <circle cx="120.499" cy="522.5" r="119" stroke="#12A89D" stroke-width="3" />
+            </svg>
+
+
+
+            <div class="section-title text-center relative">
+                <h1><strong>Inclusively Creative: <span class="text-orange">A Global Recovery</span></strong></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed velit vitae ante dictum
+                    malesuada.</p>
+            </div>
+            <div class="container bg-gray p-5 relative">
+                <div class="row">
+                    <div class="col col-lg-6 col-sm-6">
+
+                        <h3 class="d-flex align-items-center themes-icon"> <i class="fa fa-solid fa-globe"></i> <span
+                                class="text-orange"> Creative Economy for Global
+                                Revival</span></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur, libero eu
+                            tristique rhoncus, nisl nulla sodales dui, nec ornare purus nisl at arcu. Phasellus non
+                            felis in mi condimentum vestibulum et sed elit. Fusce ultricies tellus ac ipsum placerat,
+                            sed vulputate nulla commodo. Vestibulum placerat dictum vestibulum. Duis id lorem odio. Cras
+                            sit amet vehicula arcu. Curabitur eget libero nec nisi maximus pharetra a sit amet ipsum.
+                            Duis mollis nec neque non pellentesque. Phasellus mauris lorem, rhoncus in diam in, porta
+                            iaculis arcu. Donec vestibulum commodo condimentum.
+                        </p>
+                    </div>
+                    <div class="col col-lg-6 col-sm-6">
+
+                        <h3 class="d-flex align-items-center themes-icon"> <i class="fa fa-solid fa-sticky-note"></i>
+                            <span class="text-orange"> Inclusivity and SDGs
+                                Agenda</span></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur, libero eu
+                            tristique rhoncus, nisl nulla sodales dui, nec ornare purus nisl at arcu. Phasellus non
+                            felis in mi condimentum vestibulum et sed elit. Fusce ultricies tellus ac ipsum placerat,
+                            sed vulputate nulla commodo. Vestibulum placerat dictum vestibulum. Duis id lorem odio. Cras
+                            sit amet vehicula arcu. Curabitur eget libero nec nisi maximus pharetra a sit amet ipsum.
+                            Duis mollis nec neque non pellentesque. Phasellus mauris lorem, rhoncus in diam in, porta
+                            iaculis arcu. Donec vestibulum commodo condimentum.
+                        </p>
+                    </div>
+                    <div class="col col-lg-6 col-sm-6">
+
+                        <h3 class="d-flex align-items-center themes-icon"><i class="fa fa-solid fa-copyright"></i> <span
+                                class="text-orange"> IP and Rights of the
+                                Creative</span></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur, libero eu
+                            tristique rhoncus, nisl nulla sodales dui, nec ornare purus nisl at arcu. Phasellus non
+                            felis in mi condimentum vestibulum et sed elit. Fusce ultricies tellus ac ipsum placerat,
+                            sed vulputate nulla commodo. Vestibulum placerat dictum vestibulum. Duis id lorem odio. Cras
+                            sit amet vehicula arcu. Curabitur eget libero nec nisi maximus pharetra a sit amet ipsum.
+                            Duis mollis nec neque non pellentesque. Phasellus mauris lorem, rhoncus in diam in, porta
+                            iaculis arcu. Donec vestibulum commodo condimentum.
+                        </p>
+                    </div>
+                    <div class="col col-lg-6 col-sm-6">
+                        <h3 class="d-flex align-items-center themes-icon"><i class="fa fa-solid fa-line-chart"></i>
+                            <span class="text-orange"> The Future of Creative
+                                Economy</span></h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur, libero eu
+                            tristique rhoncus, nisl nulla sodales dui, nec ornare purus nisl at arcu. Phasellus non
+                            felis in mi condimentum vestibulum et sed elit. Fusce ultricies tellus ac ipsum placerat,
+                            sed vulputate nulla commodo. Vestibulum placerat dictum vestibulum. Duis id lorem odio. Cras
+                            sit amet vehicula arcu. Curabitur eget libero nec nisi maximus pharetra a sit amet ipsum.
+                            Duis mollis nec neque non pellentesque. Phasellus mauris lorem, rhoncus in diam in, porta
+                            iaculis arcu. Donec vestibulum commodo condimentum.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="py-3 relative gradient d-flex align-items-center" style="min-height: 15vh;">
+            <div class="container-fluid">
+                <h1 class="text-white text-center"> <strong>THE CONFERENCE</strong> </h1>
+            </div>
+        </section>
+
+        <section class="py-5" style="background: url(assets/images/bg-mixed.png)">
+            <div class="container bg-gray p-5">
+                <div class="row col-conference">
+                    <div class="col col-lg-6 col-sm-6 v-divide">
+
+                        <ul>
+                            <li>
+                                <p>
+                                    <span class="text-blue">Conference Event 1 :</span> Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="text-blue">Conference Event 2 :</span> Vivamus efficitur, libero eu
+                                    tristique rhoncus, nisl nulla sodales dui, nec ornare purus nisl at arcu.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="text-blue">Conference Event 3 :</span> Phasellus non felis in mi
+                                    condimentum vestibulum et sed elit
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="text-blue">Conference Event 4 :</span> Fusce ultricies tellus ac ipsum
+                                    placerat, sed vulputate nulla commodo.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="text-blue">Conference Event 5 :</span> Vestibulum placerat dictum
+                                    vestibulum
+                                </p>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <div class="col col-lg-6 col-sm-6">
+                        <ul>
+                            <li>
+                                <p>
+                                    <span class="text-blue">Conference Event 1 :</span> Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="text-blue">Conference Event 2 :</span> Vivamus efficitur, libero eu
+                                    tristique rhoncus, nisl nulla sodales dui, nec ornare purus nisl at arcu.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="text-blue">Conference Event 3 :</span> Phasellus non felis in mi
+                                    condimentum vestibulum et sed elit
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="text-blue">Conference Event 4 :</span> Fusce ultricies tellus ac ipsum
+                                    placerat, sed vulputate nulla commodo.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="text-blue">Conference Event 5 :</span> Vestibulum placerat dictum
+                                    vestibulum
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-3 relative gradient-3 d-flex align-items-center" style="min-height: 15vh;">
+            <div class="container-fluid">
+                <h1 class="text-white text-center"> <strong>THE SPEAKERS</strong></h1>
+            </div>
+        </section>
+        <section class="py-5 relative" style="background: url(assets/images/bg-mixed-2.png)">
+            <div class="container bg-gray p-5">
+                <div class="py-5">
+                    <div id="speaker" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <figure>
+                                <div class="background-circle z-0">
+                                    <img src="assets/images/person.jpg" style="visibility: hidden;">
+                                </div>
+                                <img class="relative z-1" src="assets/images/person.jpg" alt="Person">
+                                <figcaption>John Doe</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <div class="background-circle z-0">
+                                    <img src="assets/images/person.jpg" style="visibility: hidden;">
+                                </div>
+                                <img class="relative z-1" src="assets/images/person.jpg" alt="Person">
+                                <figcaption>John Doe</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <div class="background-circle z-0">
+                                    <img src="assets/images/person.jpg" style="visibility: hidden;">
+                                </div>
+                                <img class="relative z-1" src="assets/images/person.jpg" alt="Person">
+                                <figcaption>John Doe</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <div class="background-circle z-0">
+                                    <img src="assets/images/person.jpg" style="visibility: hidden;">
+                                </div>
+                                <img class="relative z-1" src="assets/images/person.jpg" alt="Person">
+                                <figcaption>John Doe</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <div class="background-circle z-0">
+                                    <img src="assets/images/person.jpg" style="visibility: hidden;">
+                                </div>
+                                <img class="relative z-1" src="assets/images/person.jpg" alt="Person">
+                                <figcaption>John Doe</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    $('#speaker').owlCarousel({
+                        loop: true,
+                        margin: 50,
+                        nav: true,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            600: {
+                                items: 3
+                            },
+                            1000: {
+                                items: 4
+                            }
+                        }
+                    })
+                </script>
+            </div>
+            <div class="container py-5 my-5">
+                <h1 class="text-center">Download the event detail info <a class="text-orange" href="#">HERE</a></h1>
+            </div>
+        </section>
     </main>
 
     <footer>
+        <section class="py-5 relative gradient-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1>
+                            <strong>
+                                JOIN G20 INDONESIA NOW!
+                            </strong>
+                        </h1>
+                        <h4>
+                            Register for the G20 Indonesia - World Conference of Creative Economy
+                        </h4>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="container d-flex h-100">
+                            <div class="row justify-content-center align-self-center">
+                                <button type="button" class="btn btn-primary btn-large strong">REGISTER NOW</button>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 relative">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="mb-5" src="assets/images/logo.png" alt="logo">
+                        <p>
+                            Indonesia's leadership in the CE at the global level
+                            is evident from its initiative to hold the 1
+                            st World
+                            Conference on Creative Economy in Bali 2018,
+                            resulting in the Bali Agenda for CE; and the
+                            establishment of Friends of Creative Economy
+                            2019, that proposed the UNGA Resolution on
+                            International Year of Creative Economy for
+                            Sustainable Development 2021 and established
+                            the Global Centre of Excellence &
+                            International Cooperation for CE (G-CINC).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <div class="py-5 container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="footer-menu">
+                            <li>
+                                <h5><strong>About Us</strong></h5>
+                            </li>
+                            <li>WCCE Indonesia 2021</li>
+                            <li>Themes</li>
+                            <li>Partners</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="footer-menu">
+                            <li>
+                                <h5><strong>Social Media</strong></h5>
+                            </li>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-newsletter">
+                            <h5><strong>Get The Latest News!</strong></h5>
+                            <form id="form1">
+                                <div class="d-flex">
+                                    <input class="newsletter-text" type="text">
+                                    <button class="newsletter-submit" type="submit" form="form1"
+                                        value="Submit">Subscribe</button>
+                                </div>
+                                <input type="checkbox" name="" id="">
+                                <span class="checkbox">By checking the box, you are agree that you’re agree to receive
+                                    WCCE
+                                    newsletter from our site</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
     <script src="assets/js/uikit.min.js"></script>
     <script src="assets/js/uikit-icons.min.js"></script>

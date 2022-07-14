@@ -1,3 +1,9 @@
+@media (min-width: 1200px) {
+    .banner-caption-mobile {
+        display: none;
+    }
+}
+
 @media (max-width: 1440px) {
     .uk-text-left {
         left: calc(25% - var(--uk-position-margin-offset));
@@ -12,7 +18,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 999px) {
     .desktop {
         display: none !important;
     }
@@ -21,7 +27,136 @@
         display: block;
     }
 
-    #header{
+    #header {
         position: relative !important;
     }
+
+    .element-bg {
+        display: none !important;
+    }
+
+    .mobile .navbar .logo-link {
+        max-width: 60%;
+    }
+
+    .mobile .navbar-dark .navbar-toggler {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    .mobile .navbar-dark .navbar-toggler:hover,
+    .mobile .navbar-dark .navbar-toggler:focus {
+        color: #FD9901;
+        border-color: #FD9901;
+    }
+
+    #countdown {
+        display: none !important;
+    }
+
+    .uk-banner {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    #landingBanner .uk-position-center.uk-text-left {
+        position: relative;
+        transform: unset;
+        right: 0;
+        left: 9%;
+        top: 0;
+    }
+
+    .logo-banner-mobile {
+        max-width: 150px;
+    }
+
+    .brand-promises-mobile {
+        font-size: 20px !important;
+    }
+
+    .banner-caption-mobile {
+        text-align: center;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 20%;
+    }
+
+    h1 {
+        font-size: 25px;
+        line-height: 1em;
+        text-align: center;
+        margin-bottom: 30px !important;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.5em;
+        color: #111038;
+    }
+
+    .image-box>* {
+        border-right: none !important;
+    }
+
+    .image-box i {
+        font-size: 50px;
+        color: #12A89D;
+    }
+
+    .counter-flex-mobile {
+        flex-direction: column !important;
+    }
+
+    .counter-wrap {
+        margin: auto;
+    }
+
+    .counter-text {
+        margin: 20px auto !important;
+    }
+
+    .footer-menu li {
+        font-size: 15px;
+        line-height: 2em;
+    }
+
+    .view-details {
+        margin: auto;
+        display: table;
+    }
+
+    .section-title h1 {
+        font-size: 18px;
+    }
+
+    .owl-prev,
+    .owl-next {
+        font-size: 100px !important;
+    }
+
+    .uk-panel .bg-mobile-uk {
+        height: 100vh;
+    }
+
+    .logo-mobile-uk {
+        margin: auto;
+        padding: 15px;
+        width: 80%;
+    }
+
+    .btn-play .fa-play {
+        font-size: 7vw;
+        padding: 3.5vw;
+        margin: 0.5vw -1.5vw;
+        border: 2px dashed;
+        border-radius: 100%;
+      }
+
+      h2 {
+        font-size: 17px;
+        font-weight: 700;
+      }
 }
