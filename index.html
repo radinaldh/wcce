@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <script src="assets/js/bootstrap.bundle.min.js" async defer></script>
     <script src="assets/js/bootstrap.min.js" async defer></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -30,28 +31,20 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header id="header" class="header sticky">
-        <div class="topbar desktop">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <ul class="social-network">
-                            <li><a class="header-icon-text" href="#"><i class="orange fa fa-map-marker"></i> A</a></li>
-                            <li><a class="header-icon-text" href="#"><i class="orange fa fa-envelope-o"></i> B</a></li>
-                        </ul>
-                    </div>
-                    <!-- social icon-->
-                    <div class="col-sm-6">
-                        <ul class="social-network white">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
+        <div class="topbar desktop d-flex">
+            <ul class="d-flex information">
+                <li><a class="header-icon-text" href="#"><i class="orange fa fa-map-marker"></i> <span
+                            class="white">Bali International Convention Center</span> </a></li>
+                <li><a class="header-icon-text" href="#"><i class="orange fa fa-envelope-o"></i> <span
+                            class="white">youremail@mail.com</span></a></li>
+            </ul>
+            <ul class="social-network white">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
         </div>
 
         <nav class="desktop navbar navbar-expand-lg navbar-light">
@@ -67,16 +60,16 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item active">
-                            <a class="nav-link" href="/index.html">HOME
+                            <a class="nav-link" href="index.html">HOME
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/about.html">ABOUT</a>
+                            <a class="nav-link" href="about.html">ABOUT</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/themes.html">THEMES</a>
+                            <a class="nav-link" href="themes.html">THEMES</a>
                         </li>
 
                         <li class="nav-item">
@@ -376,13 +369,143 @@
                 </div>
             </div>
         </section>
+        <section class="py-5 relative">
+            <div class="container-fluid">
+                <div class="section-title text-center">
+                    <h4 class="text-purple">
+                        <strong>Our Speakers</strong>
+                    </h4>
+                    <h2>
+                        Meet the Speakers Who Are Expert in Their Fields
+                    </h2>
+                </div>
+                <div class="py-3">
+                    <div id="speaker" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <figure>
+                                <div class="background-circle z-0">
+                                    <img src="assets/images/person.jpg" style="visibility: hidden;">
+                                </div>
+                                <img class="relative z-1" src="assets/images/person.jpg" alt="Person">
+                                <figcaption>John Doe</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <div class="background-circle z-0">
+                                    <img src="assets/images/person.jpg" style="visibility: hidden;">
+                                </div>
+                                <img class="relative z-1" src="assets/images/person.jpg" alt="Person">
+                                <figcaption>John Doe</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <div class="background-circle z-0">
+                                    <img src="assets/images/person.jpg" style="visibility: hidden;">
+                                </div>
+                                <img class="relative z-1" src="assets/images/person.jpg" alt="Person">
+                                <figcaption>John Doe</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <div class="background-circle z-0">
+                                    <img src="assets/images/person.jpg" style="visibility: hidden;">
+                                </div>
+                                <img class="relative z-1" src="assets/images/person.jpg" alt="Person">
+                                <figcaption>John Doe</figcaption>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure>
+                                <div class="background-circle z-0">
+                                    <img src="assets/images/person.jpg" style="visibility: hidden;">
+                                </div>
+                                <img class="relative z-1" src="assets/images/person.jpg" alt="Person">
+                                <figcaption>John Doe</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    $('#speaker').owlCarousel({
+                        loop: true,
+                        margin: 50,
+                        nav: true,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            600: {
+                                items: 3
+                            },
+                            1000: {
+                                items: 4
+                            }
+                        }
+                    })
+                </script>
+            </div>
+        </section>
+        <section class="py-5 relative gradient-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1>
+                            <strong>
+                                JOIN G20 INDONESIA NOW!
+                            </strong>
+                        </h1>
+                        <h4>
+                            Register for the G20 Indonesia - World Conference of Creative Economy
+                        </h4>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="container d-flex h-100">
+                            <div class="row justify-content-center align-self-center">
+                                <button type="button" class="btn btn-primary btn-large strong">REGISTER NOW</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 relative">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="mb-5" src="assets/images/logo.png" alt="logo">
+                        <p>
+                            Indonesia's leadership in the CE at the global level
+                            is evident from its initiative to hold the 1
+                            st World
+                            Conference on Creative Economy in Bali 2018,
+                            resulting in the Bali Agenda for CE; and the
+                            establishment of Friends of Creative Economy
+                            2019, that proposed the UNGA Resolution on
+                            International Year of Creative Economy for
+                            Sustainable Development 2021 and established
+                            the Global Centre of Excellence &
+                            International Cooperation for CE (G-CINC).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="py-5 container-fluid">
             <div class="row">
                 <div class="col-md-4">
                     <ul class="footer-menu">
-                        <li><h5><strong>About Us</strong></h5></li>
+                        <li>
+                            <h5><strong>About Us</strong></h5>
+                        </li>
                         <li>WCCE Indonesia 2021</li>
                         <li>Themes</li>
                         <li>Partners</li>
@@ -390,7 +513,9 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="footer-menu">
-                        <li><h5><strong>Social Media</strong></h5></li>
+                        <li>
+                            <h5><strong>Social Media</strong></h5>
+                        </li>
                         <li>Facebook</li>
                         <li>Twitter</li>
                         <li>Instagram</li>
@@ -401,11 +526,13 @@
                         <h5><strong>Get The Latest News!</strong></h5>
                         <form id="form1">
                             <div class="d-flex">
-                            <input class="newsletter-text" type="text">
-                            <button class="newsletter-submit" type="submit" form="form1" value="Submit">Subscribe</button>
+                                <input class="newsletter-text" type="text">
+                                <button class="newsletter-submit" type="submit" form="form1"
+                                    value="Submit">Subscribe</button>
                             </div>
                             <input type="checkbox" name="" id="">
-                            <span class="checkbox">By checking the box, you are agree that you’re agree to receive WCCE newsletter from our site</span>
+                            <span class="checkbox">By checking the box, you are agree that you’re agree to receive WCCE
+                                newsletter from our site</span>
                         </form>
                     </div>
                 </div>
@@ -414,7 +541,6 @@
     </footer>
     <script src="assets/js/uikit.min.js"></script>
     <script src="assets/js/uikit-icons.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
